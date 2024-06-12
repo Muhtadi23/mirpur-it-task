@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import recom from '../../../src/assets/img/image 49.png'
 import based from '../../../src/assets/img/image 62.png'
+import Slider from "../Slider/Slider";
 
 const NewsDetails = () => {
     const { title, urlToImage, description, publishedAt, author } = useParams()
@@ -34,7 +35,8 @@ const NewsDetails = () => {
                     </div>
                 </div>
             </div>
-
+            <h3 className="font-poppins text-lg font-semibold">Related Topics</h3>
+            <Slider></Slider>
         </div>
     );
 };

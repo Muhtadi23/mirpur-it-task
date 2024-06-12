@@ -15,7 +15,7 @@ const Slider = () => {
         },
     })
     return (
-        <div>
+        <div className="my-8">
             <div ref={sliderRef} className="keen-slider">
                 <div className="keen-slider__slide number-slide1">
                     <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">

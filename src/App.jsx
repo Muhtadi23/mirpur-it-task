@@ -12,6 +12,7 @@ function App() {
       <Banner></Banner>
       <BreakingNews></BreakingNews>
       <News></News>
+      <h3 className="font-poppins text-lg font-semibold">Editor’s Picks</h3>
       <Slider></Slider>
     </>
   )
