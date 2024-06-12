@@ -11,9 +11,9 @@ const NewsDetails = () => {
                 <h2 className="text-5xl text-white">{title}</h2>
             </div>
             <div className="grid lg:grid-cols-4 sm:grid-cols-1">
-                <div className="col-span-3">
+                <div className="col-span-3 text-black">
                     <img src={urlToImage} alt="" />
-                    <div className='flex justify-evenly text-black gap-4 mt-4'>
+                    <div className='flex justify-evenly gap-4 mt-4'>
                         <p>{publishedAt}</p>
                         <p>{author}</p>
                     </div>
@@ -31,7 +31,7 @@ const NewsDetails = () => {
                     <div className="mt-6">
                         <h2 className='text-black text-2xl font-bold'>Based on Like</h2>
                         <img src={based} alt="" />
-                        <h1 className='font-bold text-black text-lg'>The ADA is turning 30. It's time that it included digital accessibility.</h1>
+                        <h1 className='font-bold text-black text-lg'>The ADA is turning 30. It is time that it included digital accessibility.</h1>
                     </div>
                 </div>
             </div>

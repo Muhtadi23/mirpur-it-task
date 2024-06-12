@@ -4,12 +4,12 @@ import SingleNews from './SingleNews';
 import useArticleOne from '../../hooks/useArticleOne';
 import useWallStreet from '../../hooks/useWallStreet';
 import WallStreet from './WallStreet';
-import useUsaHeadline from '../../hooks/useUsaHeadline';
-import UsaHeadline from './UsaHeadline';
+import useUsaHeadline from '../../hooks/useUsaHeadline'
 // import useTesla from '../../hooks/useTesla';
 // import TeslaNews from './TeslaNews';
 import useApple from '../../hooks/useApple';
 import Apple from './Apple';
+import UsaHeadline from './UsaHeadline';
 
 const News = () => {
 
@@ -64,8 +64,9 @@ const News = () => {
                     <TabPanel>
                         <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-2'>
                             {
-                                usaHeadline.map((item, index) => <UsaHeadline key={index} item={item}></UsaHeadline>)
+                                usaHeadline.map((item, index) => <UsaHeadline item={item} key={index}></UsaHeadline>)
                             }
+
                         </div>
 
                     </TabPanel>
