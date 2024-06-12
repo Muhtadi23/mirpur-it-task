@@ -3,23 +3,23 @@ import { IoShareOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 /* eslint-disable react/prop-types */
-const SingleNews = ({ article }) => {
+const SingleNews = ({ item }) => {
     return (
-        <Link to={`/newsdetails`} className="block shadow-md font-poppins text-base">
+        <Link to={`/newsdetails/${item.title}`} className="block shadow-md font-poppins text-base">
             <img
                 alt=""
-                src={article.urlToImage}
+                src={item.urlToImage}
                 className="h-64 w-full object-cover sm:h-80 lg:h-96"
             />
             <div>
-                <h3 className="mt-4 text-lg font-bold text-black sm:text-xl">{article.title}</h3>
+                <h3 className="mt-4 text-lg font-bold text-black sm:text-xl">{item.title}</h3>
                 <p className="mt-2 max-w-sm text-black">
-                    {article.description}
+                    {item.description}
                 </p>
             </div>
             <div className='flex justify-evenly gap-4 mt-4'>
-                <p>{article.publishedAt}</p>
-                <p>{article.author || 'Unknown Author'}</p>
+                <p>{item.publishedAt}</p>
+                <p>{item.author || 'Unknown Author'}</p>
             </div>
             <div className="h-px my-3 flex-1 bg-gray-400"></div>
             <div className="flex justify-evenly pb-3">

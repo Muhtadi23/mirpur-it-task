@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const WallStreet = ({ item }) => {
     return (
         <div>
-            <Link to={`/newsdetails`} className="block shadow-md font-poppins text-base">
+            <Link to={`/newsdetails/${item.title}`} className="block shadow-md font-poppins text-base">
                 <img
                     alt=""
                     src={item.urlToImage}

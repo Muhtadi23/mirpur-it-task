@@ -46,7 +46,7 @@ const News = () => {
 
                         <div className='grid lg:grid-cols-2 sm:grid-cols-1 gap-2'>
                             {
-                                allArticle.map((article, index) => <SingleNews key={index} article={article}></SingleNews>)
+                                allArticle.map((item, index) => <SingleNews key={index} item={item}></SingleNews>)
                             }
                         </div>
                     </TabPanel>
@@ -75,6 +75,8 @@ const News = () => {
                             {/* {
                                 tesla.map((item, index) => <TeslaNews item={item} key={index}></TeslaNews>)
                             } */}
+                            <h1 className='text-red-600 text-center'>Few data causing some unexpected error</h1>
+
                         </div>
                     </TabPanel>
                     {/*---------------------- panel 5------------ */}
@@ -91,7 +93,7 @@ const News = () => {
                 <div>
                     <h2 className='text-red-500 text-2xl font-bold'>Live...</h2>
                     <img src="../../../src/assets/img/image 48.png" alt="" />
-                    <h1 className='font-bold text-lg'>Beloved Arizona coach loses battle with coronavirus</h1>
+                    <h1 className='font-bold text-black text-lg'>Beloved Arizona coach loses battle with coronavirus</h1>
                 </div>
                 <div>
                     <h2 className='text-lg font-poppins font-semibold mt-4'>Location News</h2>
